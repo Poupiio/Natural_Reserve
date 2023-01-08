@@ -1,0 +1,269 @@
+@font-face {
+	font-family: "Hanalei";
+	src: url("./assets/fonts/Hanalei\ Fill/HanaleiFill-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #E6DDC4;
+	font-family: "Roboto";
+}
+
+h2 {
+	text-align: center;
+	color: #5E4026;
+	font-family: "Hanalei", cursive;
+	font-size: 2rem;
+	margin: 3rem 0;
+}
+
+/* ******************************************************************** */
+/* 								HEADER									*/
+/* ******************************************************************** */
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	background-color: #5F8D4E;
+}
+
+nav img {
+	width: 50%;
+}
+
+nav ul a {
+	text-transform: uppercase;
+	color: #5E4026;
+	font-family: 'Hanalei', cursive;
+	font-size: 1.5rem;
+}
+
+nav ul li:last-child a {
+	text-transform: uppercase;
+	color: #FFB30B;
+	font-family: 'Hanalei', cursive;
+	font-size: 1.5rem;
+}
+
+nav ul a::after {
+	content: "";
+	display: block;
+	background-color: #E6DDC4;
+	border-radius: 50%;
+	width: 0;
+	height: 2px;
+	margin: 0.5rem auto 0;
+	transition: all 0.3s ease;
+}
+
+nav ul li:hover:not(:first-child) a::after {
+	content: "";
+	display: block;
+	background-color: #E6DDC4;
+	border-radius: 50%;
+	width: 70%;
+	height: 2px;
+	margin: 0.5rem auto 0;
+}
+
+.listItem {
+	padding: 3rem 0;
+}
+
+.listItem:not(:last-child) {
+	margin-right: 4rem;
+}
+
+@media screen and (max-width: 1020px) {
+	.listItem:not(:last-child) {
+		margin-right: 3rem;
+	}
+	nav li:first-child {
+		margin-left: 3rem;
+	}
+}
+
+
+/* ******************************************************************** */
+/* 							SECTION PRÉSENTATION 						*/
+/* ******************************************************************** */
+
+.presentation {
+	margin: 3rem 0;
+}
+
+.h2 {
+	text-align: center;
+	font-size: 2rem;
+	color: #5E4026;
+	margin-bottom: 3rem;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 5rem auto 5rem;
+}
+
+.wrapper .leftImg,
+.wrapper .rightImg {
+	width: 25%;
+}
+
+.wrapper img {
+	width: 100%;
+	box-shadow: 10px 10px 6px #5E4026;
+	border-radius: 10%;
+	margin-bottom: 1rem;
+}
+
+.wrapper .content {
+	width: 35%;
+	text-align: center;
+	align-self: center;
+	padding: 10px;
+	font-size: 1.2rem;
+}
+
+
+
+/* ******************************************************************** */
+/* 							FOOTER				 						*/
+/* ******************************************************************** */
+
+footer {
+	background-image: url("assets/images/wave3.svg");
+	background-size: cover;
+}
+
+footer .logo {
+	width: 12%;
+	height: 12%;
+	margin: 0 auto;
+}
+
+footer .logo img {
+	width: 100%;
+	margin-top: 70%;
+}
+
+.listContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.listContainer li {
+	line-height: 2rem;
+}
+
+.listContainer a {
+	color: #5E4026;
+	font-family: 'Hanalei', cursive;
+}
+
+.listContainer .links a:hover {
+	color: #FFB30B;
+	font-size: 1.5rem;
+	font-family: 'Hanalei', cursive;
+	transition: all 0.3s ease;
+}
+
+.listContainer .links {
+	margin-left: 5rem;
+}
+
+.listContainer .socialMedias {
+	margin-right: 5rem;
+	padding: 2rem;
+}
+
+.listContainer .socialMedias a:not(:last-child) {
+	margin-right: 2.5rem;
+}
+
+.listContainer .socialMedias i {
+	font-size: 2rem;
+	color: #FFB30B;
+}
+
+.listContainer .socialMedias i:hover {
+	font-size: 2rem;
+	color: #5E4026;
+	transition: 0.3s ease-out;
+}
+
+footer p {
+	margin-top: 2rem;
+	text-align: center;
+	color: #5E4026;
+	font-family: 'Hanalei', cursive;
+	padding: 10px;
+}
+
+
+/* ******************************************************************** */
+/* 								PAGE ESPÈCES	 						*/
+/* ******************************************************************** */
+
+.especes {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto 4rem;
+	cursor: pointer;
+}
+
+.especes .espece {
+	padding: 2rem;
+	width: 50%;
+	height: 60vh;
+	border-radius: 63% 37% 73% 27% / 29% 72% 28% 71%;
+}
+
+.especes .espece:hover {
+	transform: scale(1.25);
+    transition: 0.5s ease;
+}
+
+.especes .espece:first-child {
+	background-image: url("assets/images/tigre.jpeg");
+	background-size: cover;
+	background-position: center;
+	margin-right: 2rem;
+}
+
+.especes .espece:nth-child(2) {
+	background-image: url("assets/images/oiseaux.jpeg");
+	background-size: cover;
+	background-position: center;
+	margin-right: 2rem;
+}
+
+.especes .espece:nth-child(3) {
+	background-image: url("assets/images/reptiles.jpeg");
+	background-size: cover;
+	background-position: right;
+}
+
+.espece a {
+	display: block;
+	color: #FFB30B;
+	text-transform: uppercase;
+	font-family: "Hanalei", cursive;
+	margin-left: 35%;
+	font-size: 2rem;
+}

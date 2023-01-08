@@ -1,0 +1,70 @@
+.login {
+    background-color: #5E4026;
+	box-shadow: 10px 10px 6px #5E4026;
+	border-radius: 10%;
+	width: 30%;
+	margin: 5rem auto;
+	padding: 1rem;
+}
+
+.login h2 {
+    color: white;
+	font-family: "Hanalei", cursive;
+	text-align: center;
+    margin-top: 1rem;
+	margin-bottom: 2rem;
+	font-weight: 400;
+}
+
+.formInput input {
+    display: block;
+	margin: 1rem auto;
+	border: none;
+	border-radius: 20px;
+	background-color: #5F8D4E;
+	color: white;
+    padding: 0.5rem;
+}
+
+.formInput input::placeholder {
+	color: #FFB30B;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.button {
+    display: block;
+	width: 30%;
+	margin: 2rem auto;
+	padding: 0.5rem 1rem;
+	background-color: #5F8D4E;
+	border: solid 1px #5F8D4E;
+	border-radius: 15px;
+
+	box-shadow: 3px 3px 6px black;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 400;
+    font-size: 1.2rem;
+	font-family: "Hanalei", cursive;
+}
+
+.button:hover {
+	color: #FFB30B;
+	transition: 0.3s ease-out;
+}
+
+.login p {
+    text-align: center;
+	color: white;
+}
+
+.link a {
+    color: white;
+    text-align: center;
+}
+
+.link a:hover {
+    color: #FFB30B;
+    transition: 0.3s ease-out;
+}

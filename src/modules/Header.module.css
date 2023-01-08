@@ -1,0 +1,53 @@
+.mainMenu {
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	background-color: #5F8D4E;
+}
+
+.mainMenu img {
+    width: 50%;
+}
+
+.mainMenu .listItem a {
+    text-transform: uppercase;
+	color: #5E4026;
+	font-family: 'Hanalei', cursive;
+	font-size: 1.5rem;
+}
+
+.mainMenu ul li:last-child a {
+	text-transform: uppercase;
+	color: #FFB30B;
+	font-family: 'Hanalei', cursive;
+	font-size: 1.5rem;
+}
+
+.mainMenu ul a::after {
+	content: "";
+	display: block;
+	background-color: #E6DDC4;
+	border-radius: 50%;
+	width: 0;
+	height: 2px;
+	margin: 0.5rem auto 0;
+	transition: all 0.3s ease;
+}
+
+.mainMenu ul li:hover:not(:first-child) a::after {
+	content: "";
+	display: block;
+	background-color: #E6DDC4;
+	border-radius: 50%;
+	width: 70%;
+	height: 2px;
+	margin: 0.5rem auto 0;
+}
+
+.listItem {
+	padding: 3rem 0;
+}
+
+.listItem:not(:last-child) {
+	margin-right: 4rem;
+}

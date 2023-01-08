@@ -1,0 +1,33 @@
+.contact {
+    width: 65%;
+    margin: 3rem auto;
+    border: dashed 5px #5E4026;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact input, .contact textarea {
+    display: block;
+    margin: 5px auto;
+}
+
+.contact .left {
+    margin-left: 3rem;
+}
+
+.contact button {
+    padding: 10px 15px;
+    background-color: #FFB30B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "Hanalei", cursive;
+    font-weight: 400;
+
+}
+
+.contact textarea {
+    padding: 2px;
+}

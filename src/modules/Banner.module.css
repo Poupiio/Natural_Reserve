@@ -1,0 +1,48 @@
+.banner {
+	background-image: url("../assets/images/guepard.jpeg");
+	background-size: cover;
+	background-position-y: 15%;
+	height: 70vh;
+
+	display: flex;
+	justify-content: flex-start;
+}
+
+.banner h1 {
+	font-size: 5rem;
+	color: white;
+	padding: 5rem 0 0 10rem;
+	font-family: 'Hanalei', cursive;
+	font-weight: 400;
+}
+
+@media creen and (max-width: 1010px) {
+	.banner {
+		justify-content: center;
+	}
+}
+
+
+@media screen and (max-width: 992px) {
+	.banner h1 {
+		font-size: 4.5rem;
+		margin-left: 5rem;
+	}
+}
+
+@media screen and (max-width: 825px) {
+	.banner {
+		height: 50vh;
+	}
+
+	.banner h1 {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.banner {
+		height: 40vh;
+	}
+}

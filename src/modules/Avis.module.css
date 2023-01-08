@@ -1,0 +1,20 @@
+.comments {
+    border: solid 3px #FFB30B;
+    background-color: #5f8d4e21;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 40%;
+    height: 20vh;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+.comments h4, h5 {
+    text-align: right;
+    color: #5E4026;
+}
+
+.comments h4 {
+    margin-top: 3rem;
+}
