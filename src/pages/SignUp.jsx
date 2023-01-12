@@ -36,8 +36,8 @@ const SignUp = () => {
                     repassword: repassword
                 })
             })
-        navigate('/');
-    };
+            navigate('/');
+        };
         
         // Je vide les champs
         e.target.email.value = "";
@@ -46,7 +46,6 @@ const SignUp = () => {
         e.target.password.value = "";
         e.target.repassword.value = "";
     };
-
 
     return (
         <>
