@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const Especes = () => {
+const Species = () => {
     return (
         <>
             <Header />
@@ -25,4 +25,4 @@ const Especes = () => {
 };
 
 
-export default Especes;
+export default Species;

@@ -4,10 +4,9 @@
     border-radius: 5px;
     margin: 0 auto;
     width: 40%;
-    height: 20vh;
     overflow: hidden;
     margin-bottom: 2rem;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .comments h4, h5 {

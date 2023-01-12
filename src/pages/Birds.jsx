@@ -12,7 +12,7 @@ import flamand from '../assets/images/flamand.jpg';
 import faucon from '../assets/images/faucon.jpg';
 import fou from '../assets/images/fou.jpg';
 
-const Oiseaux = () => {
+const Birds = () => {
     return (
         <>
             <Header />
@@ -93,4 +93,4 @@ const Oiseaux = () => {
     )
 };
 
-export default Oiseaux;
+export default Birds;

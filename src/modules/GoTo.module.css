@@ -1,0 +1,13 @@
+.park {
+    margin: 10% 0;
+}
+
+.icons {
+    color: #FFB30B;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.icons i:not(:last-child) {
+    margin-right: 1.5rem;
+}

@@ -15,7 +15,7 @@ import rhino from '../assets/images/rhino.jpg';
 import antilope from '../assets/images/antilope.jpg';
 import girafe from '../assets/images/girafe.jpg';
 
-const Mammiferes = () => {
+const Mammals = () => {
     return (
         <>
             <Header />
@@ -99,4 +99,4 @@ const Mammiferes = () => {
     )
 };
 
-export default Mammiferes;
+export default Mammals;

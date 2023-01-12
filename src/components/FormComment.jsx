@@ -5,7 +5,8 @@ const FormComment = () => {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        const pseudo = e.target.pseudo.value;
+        const user_pseudo = e.target.user_pseudo.value;
+        const safari_title = e.target.safari_title.value;
         const content = e.target.content.value;
         const img = e.target.img.value;
 
@@ -15,7 +16,8 @@ const FormComment = () => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                pseudo,
+                user_pseudo,
+                safari_title,
                 content,
                 img
             })
@@ -29,6 +31,11 @@ const FormComment = () => {
                 <form onSubmit={onSubmit}>
                     <div className="formContent">
                         <label>Quel est votre pseudo ?
+                            <input type="text" name="pseudo" required />
+                        </label>
+                    </div>
+                    <div className="formContent">
+                        <label>Quel était le nom du safari ?
                             <input type="text" name="pseudo" required />
                         </label>
                     </div>

@@ -4,8 +4,8 @@
 }
 
 @font-face {
-	font-family: "Roboto";
-	src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
 * {
@@ -19,7 +19,7 @@
 body {
 	font-family: sans-serif;
 	background-color: #E6DDC4;
-	font-family: "Roboto";
+	font-family: "Montserrat", sans-serif;
 }
 
 h2 {

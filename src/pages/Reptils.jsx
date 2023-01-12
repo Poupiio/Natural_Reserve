@@ -13,7 +13,7 @@ import lezMur from '../assets/images/lezard_murailles.jpeg';
 import lezVert from '../assets/images/lezard_vert.jpg';
 import tortue from '../assets/images/tortue.jpeg';
 
-const Reptiles = () => {
+const Reptils = () => {
     return (
         <>
             <Header />
@@ -79,4 +79,4 @@ const Reptiles = () => {
     )
 };
 
-export default Reptiles;
+export default Reptils;

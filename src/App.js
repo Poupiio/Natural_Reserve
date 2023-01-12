@@ -4,18 +4,17 @@ import "swiper/css/bundle";
 
 import Home from './pages/Home';
 import Safaris from './pages/Safaris';
-import Parc from './pages/Parc';
-import Connexion from './pages/Connexion';
-import Inscription from "./pages/Inscription";
 import Profile from './pages/Profile';
-import Avis from './pages/Avis';
+import Comments from './pages/Comments';
 import Contact from './pages/Contact';
-import Especes from "./pages/Especes";
-import Mammiferes from "./pages/Mammiferes";
-import Oiseaux from "./pages/Oiseaux";
-import Reptiles from "./pages/Reptiles";
+import Species from "./pages/Species";
+import Mammals from "./pages/Mammals";
+import Birds from "./pages/Birds";
+import Reptils from "./pages/Reptils";
 import MentionsLegales from "./pages/MentionsLegales";
 import Admin from "./pages/Admin";
+import SignUp from "./pages/SignUp";
+import LogIn from "./pages/LogIn";
 
 const App = () => {
 	return (
@@ -24,16 +23,15 @@ const App = () => {
 
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/parc" element={<Parc />} />
-					<Route path="/especes" element={<Especes />} />
-					<Route path="/especes/mammiferes" element={<Mammiferes />} />
-					<Route path="/especes/oiseaux" element={<Oiseaux />} />
-					<Route path="/especes/reptiles" element={<Reptiles />} />
+					<Route path="/especes" element={<Species />} />
+					<Route path="/especes/mammiferes" element={<Mammals />} />
+					<Route path="/especes/oiseaux" element={<Birds />} />
+					<Route path="/especes/reptiles" element={<Reptils />} />
 					<Route path="/safaris" element={<Safaris />} />
-					<Route path="/connexion" element={<Connexion />} />
-					<Route path="/inscription" element={<Inscription />} />
+					<Route path="/connexion" element={<LogIn />} />
+					<Route path="/inscription" element={<SignUp />} />
 					<Route path="/myprofile" element={<Profile />} />
-					<Route path="/avis" element={<Avis />} />
+					<Route path="/avis" element={<Comments />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/mentionslegales" element={<MentionsLegales />} />
 					<Route path="/admin" element={<Admin />} />

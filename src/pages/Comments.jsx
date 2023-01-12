@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FormComment from '../components/FormComment';
 
-const Avis = () => {
+const Comments = () => {
 
     const [comments, setComments] = useState([]);
 
@@ -36,6 +36,7 @@ const Avis = () => {
                                 <p>{comment.content}</p>
                                 <h4>Commentaire posté par : {comment.user_pseudo}</h4>
                                 <h5>le {date.toLocaleString('fr-FR', dateOptions)}</h5> 
+                                <h5>pour le safari {comment.safari_title}</h5> 
                             </article>
                         )
                     })}
@@ -46,4 +47,4 @@ const Avis = () => {
     )
 };
 
-export default Avis;
+export default Comments;

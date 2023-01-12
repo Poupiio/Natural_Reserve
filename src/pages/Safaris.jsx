@@ -43,11 +43,6 @@ const Safaris = () => {
                     )
                 })}
             </div>
-            <div className={style.link}>
-                <p>
-                    <Link to="/avis">Découvrez ce que nos visiteurs en ont pensé</Link>
-                </p>
-            </div>
             
             <Footer />
         </>
