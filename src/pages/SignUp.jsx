@@ -10,6 +10,7 @@ const SignUp = () => {
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
+        // Pour que la page ne s'actualise pas au submit
         e.preventDefault();
     
         // Je récupère les données du formulaire
@@ -19,28 +20,31 @@ const SignUp = () => {
         const password = e.target.password.value;
         const repassword = e.target.repassword.value;
 
-        fetch("http://localhost:80/api/signup", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                email: email,
-                name: name,
-                pseudo: pseudo,
-                password: password,
-                repassword: repassword
+        if (password != repassword) {
+            alert("Vos mots de passe ne sont pas identiques");
+        } else {
+            fetch("http://localhost:80/api/signup", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: email,
+                    name: name,
+                    pseudo: pseudo,
+                    password: password,
+                    repassword: repassword
+                })
             })
-        });
-     
+        navigate('/');
+    };
+        
         // Je vide les champs
         e.target.email.value = "";
         e.target.name.value = "";
         e.target.pseudo.value = "";
         e.target.password.value = "";
         e.target.repassword.value = "";
-
-        navigate('/');
     };
 
 
