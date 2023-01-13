@@ -35,7 +35,7 @@ const Comments = () => {
                             <article key={comment.id}>
                                 <p>{comment.content}</p>
                                 <h4>Commentaire posté par : {comment.user_pseudo}</h4>
-                                <h5>le {date.toLocaleString('fr-FR', dateOptions)}</h5> 
+                                <h5>le {date.toLocaleDateString('fr-FR', dateOptions)}</h5> 
                                 <h5>pour le safari {comment.safari_title}</h5> 
                             </article>
                         )

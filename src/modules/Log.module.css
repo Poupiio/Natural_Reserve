@@ -36,7 +36,6 @@
 	outline: none;
     padding: 0.5rem;
 	max-width: auto;
-
 }
 
 .authForm .formInput input::placeholder {
@@ -58,14 +57,15 @@
 
 	box-shadow: 3px 3px 8px 2px rgba(255, 255, 255, 0.71);
 	text-transform: uppercase;
-	font-weight: 400;
-    font-size: 1.2rem;
-	font-family: "Hanalei", cursive;
+    font: 400 1.2rem "Hanalei", cursive;
+}
+
+:hover {
+  transition: 0.3s ease-out;
 }
 
 .button:hover {
 	background-color: #ffb20ba9;
-	transition: 0.3s ease-out;
 }
 
 .authForm p {
@@ -78,8 +78,8 @@
 
 .link a:hover {
     color: #FFB30B;
-    transition: 0.3s ease-out;
 }
+
 
 
 @media screen and (max-width: 1000px) {
@@ -121,5 +121,4 @@
 	.authForm .formBtn .button {
 		font-size: 0.8rem;
 	}
-
 }

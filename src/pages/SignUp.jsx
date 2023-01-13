@@ -20,7 +20,7 @@ const SignUp = () => {
         const password = e.target.password.value;
         const repassword = e.target.repassword.value;
 
-        if (password != repassword) {
+        if (password !== repassword) {
             alert("Vos mots de passe ne sont pas identiques");
         } else {
             fetch("http://localhost:80/api/signup", {
