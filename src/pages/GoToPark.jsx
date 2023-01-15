@@ -1,6 +1,6 @@
 import style from '../modules/GoTo.module.css';
 
-const GoTo = () => {
+const GoToPark = () => {
     return (
         <section id="park" className={style.park}>
             <h2>Comment venir nous voir ?</h2>
@@ -13,4 +13,4 @@ const GoTo = () => {
     )
 };
 
-export default GoTo;
+export default GoToPark;

@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import BigFive from '../components/BigFive';
-import GoTo from './GoTo';
+import GoToPark from './GoToPark';
 
 
 import impala from '../assets/images/impala.jpg';
@@ -35,7 +35,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <GoTo />
+            <GoToPark />
 
             <BigFive />
             <Footer />

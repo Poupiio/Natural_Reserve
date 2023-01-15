@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import style from '../modules/CommentForm.module.css';
 
 const FormComment = () => {
+    const navigate = useNavigate();
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -22,6 +24,7 @@ const FormComment = () => {
                 img
             })
         });
+        navigate("/avis");
     };
 
     return (

@@ -7,6 +7,7 @@ import Safaris from './pages/Safaris';
 import Profile from './pages/Profile';
 import Comments from './pages/Comments';
 import Contact from './pages/Contact';
+import Reservation from './pages/Reservation';
 import Species from "./pages/Species";
 import Mammals from "./pages/Mammals";
 import Birds from "./pages/Birds";
@@ -28,6 +29,7 @@ const App = () => {
 					<Route path="/especes/oiseaux" element={<Birds />} />
 					<Route path="/especes/reptiles" element={<Reptils />} />
 					<Route path="/safaris" element={<Safaris />} />
+					<Route path="/reservation" element={<Reservation />} />
 					<Route path="/connexion" element={<LogIn />} />
 					<Route path="/inscription" element={<SignUp />} />
 					<Route path="/myprofile" element={<Profile />} />

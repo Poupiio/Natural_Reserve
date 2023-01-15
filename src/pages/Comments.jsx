@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-import style from '../modules/Avis.module.css';
+import style from '../modules/Comments.module.css';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import FormComment from '../components/FormComment';
+import PostComment from '../components/PostComment';
 
 const Comments = () => {
 
@@ -41,7 +41,7 @@ const Comments = () => {
                         )
                     })}
                  </Carousel>
-            <FormComment />
+            <PostComment />
             <Footer />
         </>
     )

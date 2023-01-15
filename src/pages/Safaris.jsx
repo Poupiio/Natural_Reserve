@@ -39,6 +39,7 @@ const Safaris = () => {
                                     <li><span>Tarif : </span>{safari.tarif + "€/personne TTC"}</li>
                                 </ul>
                             </div>
+                            <Link to={"/reservation"} className={style.link}>Réserver</Link>
                         </article>
                     )
                 })}

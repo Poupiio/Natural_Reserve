@@ -1,0 +1,51 @@
+.formWrapper {
+    background-color: #5f8d4e76;
+    box-shadow: 10px 10px 15px -3px #5f8d4e76;
+    border-radius: 5px;
+    width: 40%;
+    margin: 0 auto 3rem;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.formWrapper input, textarea {
+    display: block;
+    margin: 0.3rem auto 1rem;
+    border-radius: 5px;
+    color: #5E4026;
+    padding: 0.4rem;
+}
+
+.formWrapper input[type="radio"] {
+    display: inline-block;
+}
+
+.formWrapper .label {
+    padding: 0.6rem;
+}
+
+.formWrapper .label a {
+    color: inherit;
+}
+
+.formWrapper .label a:hover {
+    color: white;
+}
+
+.formWrapper button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.8rem 1.2rem;
+    background-color: #FFB30B;
+    border: none;
+    border-radius: 15px;
+    color: #5F8D4E;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Hanalei", cursive;
+}
+
+.formWrapper button:hover {
+    color: white;
+}

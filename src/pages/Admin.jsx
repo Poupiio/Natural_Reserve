@@ -57,7 +57,7 @@ const Admin = () => {
                             </button>
                         </td>
                         <td colspan="2">
-                            <button className={style.trash}>
+                            <button className={style.trash} onClick={() => {}}>
                                 <i class="fa-solid fa-trash"></i>
                             </button>
                         </td>

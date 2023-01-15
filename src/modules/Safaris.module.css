@@ -14,7 +14,7 @@
 
 .safari {
 	width: 100%;
-	height: 60vh;
+	padding: 2rem 0;
 	text-align: center;
 	box-shadow: 10px 10px 6px #5E4026;
 }
@@ -63,19 +63,12 @@
     padding: 2rem;
 }
 
-.link p {
-    text-align: center;
+.safari .link {
+	color: white;
+	text-transform: uppercase;
+	font-family: "Hanalei", cursive;
+	font-size: 2.5rem;
 }
 
-.link a {
-    color: #5F8D4E;
-	font-weight: 600;
-	font-size: 2rem;
-}
-
-.link a:hover {
-    color: #5f8d4e76;
-    transition: 0.3s ease-out;
-}
 
 /* Au hover sur les cartes de safaris, faire apparaître le contenu et foncer l'image */
