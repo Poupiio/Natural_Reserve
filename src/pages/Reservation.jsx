@@ -28,7 +28,7 @@ const ReservationForm = () => {
         fetch("http://localhost:80/api/reservations", {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                "Content-Type": "application/json",
             },
             body: JSON.stringify({
                 safari,
@@ -38,7 +38,7 @@ const ReservationForm = () => {
             })
         });
         alert("Votre demande de réservation a bien été enregistrée. Elle sera traitée dans les meilleurs délais.");
-        // navigate("/safaris");
+        navigate("/safaris");
     }
 
     return (

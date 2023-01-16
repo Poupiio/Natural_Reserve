@@ -1,13 +1,53 @@
 .park {
-    margin: 10% 0;
-}
-
-.icons {
-    color: #FFB30B;
+    margin: 8% 0;
+    color: white;
     font-size: 2rem;
     text-align: center;
 }
 
-.icons i:not(:last-child) {
-    margin-right: 1.5rem;
+.park .transports .transport i {
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 2rem;
+    background: linear-gradient(18deg, rgba(255,179,11,1) 2%, rgba(230,221,196,1) 87%);
+}
+
+.park .transports .transport h3 {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.transports {
+    background-image: url("../assets/images/elephants.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.park .transports .transport {
+    width: 25%;
+    border: solid 3px #5E4026;
+    background-color: #5e4026b3;
+    border-radius: 46% 54% 42% 58% / 66% 45% 55% 34%;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.park .transports .transport a {
+    color: #5F8D4E;
+    font-weight: 600;
+}
+
+.park .transports .transport p {
+    font-size: 1.2rem;
+}
+
+.park .transports .transport p.warning {
+    font-size: 0.9rem;
 }
