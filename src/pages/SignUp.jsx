@@ -36,6 +36,7 @@ const SignUp = () => {
                     repassword: repassword
                 })
             })
+            alert("Votre compte a bien été enregistré !");
             navigate('/');
         };
         

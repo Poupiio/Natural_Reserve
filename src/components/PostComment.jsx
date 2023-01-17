@@ -4,24 +4,22 @@ import style from '../modules/CommentForm.module.css';
 const FormComment = () => {
     const navigate = useNavigate();
 
-    const onSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
-        const user_pseudo = e.target.user_pseudo.value;
-        const safari_title = e.target.safari_title.value;
         const content = e.target.content.value;
-        const img = e.target.img.value;
+        const user_pseudo = e.target.pseudo.value;
+        const safari_title = e.target.safari.value;
 
-        fetch('http://localhost:80/api/comments', {
+        fetch("http://localhost:80/api/comments", {
             method: "PUT",
             headers: {
-                'Content-Type': 'application/json'
+                "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                user_pseudo,
-                safari_title,
                 content,
-                img
+                user_pseudo,
+                safari_title
             })
         });
         navigate("/avis");
@@ -31,7 +29,7 @@ const FormComment = () => {
         <>
             <h2>Donnez-nous votre avis</h2>
             <div className={style.formWrapper}>
-                <form onSubmit={onSubmit}>
+                <form onSubmit={handleSubmit}>
                     <div className="formContent">
                         <label>Quel est votre pseudo ?
                             <input type="text" name="pseudo" required />
@@ -39,7 +37,7 @@ const FormComment = () => {
                     </div>
                     <div className="formContent">
                         <label>Quel était le nom du safari ?
-                            <input type="text" name="pseudo" required />
+                            <input type="text" name="safari" required />
                         </label>
                     </div>
                     <div className="formContent">
@@ -47,11 +45,11 @@ const FormComment = () => {
                             <textarea name="content" rows="7" required />
                         </label>
                     </div>
-                    <div className='formContent'>
+                    {/* <div className='formContent'>
                         <label>Voulez-vous ajouter une image ?
                             <input type="file" name="img" />
                         </label>
-                    </div>
+                    </div> */}
                     <button type="submit">Poster</button>
                 </form>
             </div>

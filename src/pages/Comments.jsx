@@ -28,7 +28,7 @@ const Comments = () => {
             <Header />
 
             <h2>Ce qu'ils en ont pensé</h2>
-                <Carousel className={style.comments} autoPlay infiniteLoop interval={5000} showStatus={false}>
+                <Carousel className={style.comments} autoPlay infiniteLoop interval={5000} showStatus={false} showThumbs={false}>
                     {comments.map((comment) => {
                         const date = new Date(comment.posted_at);
                         return (

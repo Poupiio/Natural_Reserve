@@ -22,8 +22,8 @@ const ReservationForm = () => {
 
         const safari = safariSelected;
         const places = numSelected;
-        const email = e.target.email.value;
         const name = e.target.name.value;
+        const email = e.target.email.value;
         
         fetch("http://localhost:80/api/reservations", {
             method: "POST",
@@ -35,7 +35,7 @@ const ReservationForm = () => {
                 places,
                 name,
                 email
-            })
+            }),
         });
         alert("Votre demande de réservation a bien été enregistrée. Elle sera traitée dans les meilleurs délais.");
         navigate("/safaris");
