@@ -73,6 +73,29 @@
     }    
 }
 
+@media screen and (max-width: 768px) {
+    .article {
+        width: 70%;
+    }
+
+    .article img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .article img {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+
+    .article h1 {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 310px) {
     .listLinks button {
         width: 60%;
