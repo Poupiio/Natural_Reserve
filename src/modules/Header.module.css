@@ -1,0 +1,71 @@
+.mainMenu ul {
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	background-color: #5F8D4E;
+}
+
+.mainMenu img {
+    width: 50%;
+}
+
+.mainMenu ul a {
+	text-transform: uppercase;
+	color: #5E4026;
+	font-family: 'Hanalei', cursive;
+	font-size: 1.5rem;
+}
+
+.mainMenu ul li:last-child a {
+	color: #FFB30B;
+}
+
+.mainMenu ul a::after {
+	content: "";
+	display: block;
+	background-color: #E6DDC4;
+	border-radius: 50%;
+	width: 0;
+	height: 2px;
+	margin: 0.5rem auto 0;
+	transition: all 0.3s ease;
+}
+
+.mainMenu ul li:hover:not(:first-child) a::after {
+	content: "";
+	display: block;
+	background-color: #E6DDC4;
+	border-radius: 50%;
+	width: 70%;
+	height: 2px;
+	margin: 0.5rem auto 0;
+}
+
+.mainMenu .listItem:not(:last-child) {
+	margin-right: 4rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .mainMenu img {
+        width: 35%;
+        margin-left: 5rem;
+    }
+    .mainMenu ul a {
+        font-size: 1.3rem;
+    }
+    .mainMenu ul li:last-child a {
+        font-size: 1.5rem;
+    }
+    .mainMenu .listItem:not(:last-child) {
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .mainMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

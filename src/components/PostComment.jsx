@@ -21,8 +21,13 @@ const FormComment = () => {
                 user_pseudo,
                 safari_title
             })
-        });
-        navigate("/avis");
+        })
+        alert("Merci d'avoir donné votre avis !");
+        navigate('/avis');
+
+        e.target.content.value = "";
+        e.target.pseudo.value = "";
+        e.target.safari.value = "";
     };
 
     return (

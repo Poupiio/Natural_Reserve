@@ -38,8 +38,22 @@
     color: white;
 }
 
-/* #FFB30B
-#5E4026
-#5f8d4e76
-#5F8D4E
- */
+
+
+@media screen and (max-width: 1000px) {
+    .formWrapper {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .formWrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .formWrapper {
+        width: 80%;
+    }
+}
