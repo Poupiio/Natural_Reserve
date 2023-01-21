@@ -29,9 +29,14 @@ const LogIn = () => {
         const loginData = await jwtResponse.json();
             console.log(loginData);
         
-        if (loginData) {
+        if (loginData.role === "user") {
             localStorage.setItem('jwt', JSON.stringify(loginData));
             navigate('/');
+        } else if (loginData.role === "admin") {
+            localStorage.setItem('jwt', JSON.stringify(loginData));
+            navigate('/admin');
+        } else {
+            navigate("/");
         };
         
         

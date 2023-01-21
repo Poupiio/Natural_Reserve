@@ -16,6 +16,7 @@ import MentionsLegales from "./pages/MentionsLegales";
 import Admin from "./pages/Admin";
 import SignUp from "./pages/SignUp";
 import LogIn from "./pages/LogIn";
+import mammalsData from "./components/mammalsData";
 
 const App = () => {
 	return (
@@ -25,7 +26,7 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/especes" element={<Species />} />
-					<Route path="/especes/mammiferes" element={<Mammals />} />
+					<Route path="/especes/mammiferes" element={<Mammals datas = {mammalsData} />} />
 					<Route path="/especes/oiseaux" element={<Birds />} />
 					<Route path="/especes/reptiles" element={<Reptils />} />
 					<Route path="/safaris" element={<Safaris />} />

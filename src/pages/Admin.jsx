@@ -1,7 +1,37 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+
 import Header from '../components/Header';
 import style from '../modules/Admin.module.css';
 
 const Admin = () => {
+    // const navigate = useNavigate();
+    // const [role, setRole] = useState();
+
+    // useEffect(() => {
+    //     const jwtLocalStorage = localStorage.getItem('jwt');
+    //     const jwtConnexion = JSON.parse(jwtLocalStorage).access_token;
+    //     const jwtRole = JSON.parse(jwtLocalStorage).role;
+        
+    //     (async () => {
+    //         const response = await fetch('http://localhost:80/api/admin', {
+    //             method: 'GET', 
+    //             headers: {
+    //             "Authorization": "Bearer" + " " + jwtConnexion,
+    //             "Content-Type": "application/json"
+    //             },
+    //         });
+
+    //         setRole(jwtRole);
+
+    //         if (jwtRole != "admin") {
+    //             alert("Vous n'avez pas l'autorisation d'accéder à cette page.")
+    //             navigate('/');
+    //         }
+
+    //         })();
+    //   }, [navigate]);
+
     return (
         <>
         <Header />

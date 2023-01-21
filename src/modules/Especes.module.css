@@ -19,7 +19,8 @@
     margin-bottom: 2rem;
   }
 
-/* clearfix si le texte est plus petit que l'image. */
+/* Si le texte est plus petit que la taille de l'image,
+    j'utilise clearfix pour ne pas qu'il déborde */
 .article::after {
     content: "";
     display: block;
@@ -64,15 +65,16 @@
     transition: 0.3s;
 }
 
-/* .backToTop i {
-    padding: 1rem;
-    font-size: 2rem;
-    color: #5E4026;
-    background-color: #5f8d4e76;
-    cursor: pointer;
+
+
+@media screen and (max-width: 900px) {
+    .listLinks button {
+        width: 30%;
+    }    
 }
 
-.backToTop a {
-    display: block;
-    margin: 0 auto;
-} */
+@media screen and (max-width: 310px) {
+    .listLinks button {
+        width: 60%;
+    }    
+}
