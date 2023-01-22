@@ -29,22 +29,16 @@ const LogIn = () => {
         const loginData = await jwtResponse.json();
             console.log(loginData);
         
-        if (loginData.role === "user") {
+        if (loginData) {
             localStorage.setItem('jwt', JSON.stringify(loginData));
-            navigate('/');
-        } else if (loginData.role === "admin") {
-            localStorage.setItem('jwt', JSON.stringify(loginData));
-            navigate('/admin');
-        } else {
             navigate("/");
-        };
-        
-        
+        }
+
         // Je vide les champs
         e.target.email.value = "";
         e.target.password.value = "";
 
-        navigate('/');
+        // navigate('/');
     };
 
     return (

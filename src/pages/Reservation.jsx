@@ -8,6 +8,7 @@ import style from '../modules/Reservation.module.css';
 
 const ReservationForm = () => {
     const navigate = useNavigate();
+    const jwt = JSON.parse(localStorage.getItem('jwt'));
 
     const [safariSelected, setSafariSelected] = useState();
     const [numSelected, setNumSelected] = useState();
@@ -29,6 +30,7 @@ const ReservationForm = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
+                "Authoziation": "Bearer" + jwt
             },
             body: JSON.stringify({
                 safari,

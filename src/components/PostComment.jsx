@@ -4,6 +4,9 @@ import style from '../modules/CommentForm.module.css';
 const FormComment = () => {
     const navigate = useNavigate();
 
+    const jwt = JSON.parse(localStorage.getItem('jwt'));
+    console.log("Je suis bien connecté" + jwt);
+    
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -11,23 +14,30 @@ const FormComment = () => {
         const user_pseudo = e.target.pseudo.value;
         const safari_title = e.target.safari.value;
 
-        fetch("http://localhost:80/api/comments", {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                content,
-                user_pseudo,
-                safari_title
+        if (jwt) {
+            fetch("http://localhost:80/api/comments", {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer " + jwt
+                },
+                body: JSON.stringify({
+                    content,
+                    user_pseudo,
+                    safari_title
             })
         })
-        alert("Merci d'avoir donné votre avis !");
-        navigate('/avis');
+            alert("Merci d'avoir donné votre avis !");
+            navigate('/avis');
 
-        e.target.content.value = "";
-        e.target.pseudo.value = "";
-        e.target.safari.value = "";
+            e.target.content.value = "";
+            e.target.pseudo.value = "";
+            e.target.safari.value = "";
+        } else {
+            alert("Vous devez être connecté pour laisser un commentaire.");
+            navigate("/connexion");
+        }
+        
     };
 
     return (
