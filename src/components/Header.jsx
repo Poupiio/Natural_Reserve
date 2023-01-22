@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 
 import logo from '../assets/images/logo.svg';
 import style from '../modules/Header.module.css';
+import LogOut from "./LogOut";
 
 const Header = () => {
-    
+
     return (
         <header>
             <nav className={style.mainMenu}>
